@@ -10,7 +10,7 @@ import Rounded from '../../app/common/RoundedButton';
 import Magnetic from '../../app/common/Magnetic';
 import DarkModeToggle from '../DarkModeToggle';
 
-export default function index() {
+export default function Index() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();

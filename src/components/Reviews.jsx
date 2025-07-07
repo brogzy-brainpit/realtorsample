@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Magnetic from '@/app/common/Magnetic'
 import Google from '../../public/images/google.png'
+import Image from "next/image";
 const reviews = [
   {
     text: "Brilliant website",
@@ -71,7 +72,7 @@ const Review = () => {
           exit="exit"
           transition={{ duration: 0.35, ease: "easeInOut" }}
         >
-          <p className="text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out text-xl italic mb-4 font-custom-condensed">"{review.text}"</p>
+          <p className="text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out text-xl italic mb-4 font-custom-condensed"> &quot; {review.text}&quot;</p>
 
           <div className="flex justify-center mb-2">
             {Array(review.rating)
@@ -110,7 +111,9 @@ const Review = () => {
         href="#"
         className="text-brand-text dark:text-brand-text-dark ease-in-out inline-flex items-center gap-2 border border-brand-text dark:border-brand-text-dark transition-all duration-500 rounded-full px-5 py-2 text-sm font-medium hover:bg-gray-100"
       >
-        <img
+        <Image
+        width={32}
+        height={32}
           src={Google.src}
           loading="lazy"
           alt="real estate Google reviews"

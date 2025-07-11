@@ -13,7 +13,7 @@ function WhyUs() {
       </p>
     </div>
     <div className=" relative flex breaker-child ">
- <div className="absolute inset-0 bg-[url('/images/whangaehu.png')] bg-cover bg-center opacity-10"></div>
+ <div className="absolute inset-0 bg-[url('/images/whangaehu.png')] bg-cover bg-center opacity-30"></div>
 
 <div className=" grid gap-y-10 sm:gap-y-14 grid-cols-1 sm:grid-cols-2 sm:gap-x-6">
   {/* Block 1 */}

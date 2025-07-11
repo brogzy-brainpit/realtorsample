@@ -6,13 +6,13 @@ import CountUp from 'react-countup';
 
 function OurNumbers() {
   return (
-    <div className='w-full px-4 py-[10vh] breaker container mx-auto g-white'>
-<div className=' breaker-child flex flex-3 font-custom text-footer pb-6 text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>
+    <div className='w-full py-[10vh] breaker container mx-auto'>
+<div className=' breaker-child flex flex-3 font-custom text-footer leading-[1] pb-6 text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>
   Our Numbers Do the Talking for Us
 </div>
 
      <div className='breaker-child flex-1'>
-       <div className=' px-2 breaker flex flex-col  w-full bged-400 justify-center items-center gap-0' >
+       <div className='  breaker flex flex-col  w-full bged-400 justify-center items-center gap-0' >
 <div className='breaker-chil flex w-full justify-betwee'>
   <div className='bg-green-30 p-2 border  border-b-0 border-brand-text dark:border-brand-text-dark transition-all duration-500 flex justify-center items-center flex-col flex-1'>
  <h2 className='font-custom text-footer leading-[1]  text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>

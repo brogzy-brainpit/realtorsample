@@ -6,20 +6,20 @@ import { useEffect, useState } from 'react';
 export default function ThemeToggle() {
   const [isDark, setIsDark] = useState(false);
 
-  // useEffect(() => {
-  //   // On mount, read localStorage
-  //   const theme = localStorage.getItem('theme');
-  //   if (theme === 'dark') {
-  //     document.documentElement.classList.add('dark');
-  //     setIsDark(true);
-  //   }
-  // }, []);
+  useEffect(() => {
+    // On mount, read localStorage
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      setIsDark(true);
+    }
+  }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
     const newTheme = !isDark;
-    document.documentElement.classList.toggle('dark', !isDark);
-    // localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+    document.documentElement.classList.toggle('dark', newTheme);
+    localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+    setIsDark(newTheme);
   };
 
   return (

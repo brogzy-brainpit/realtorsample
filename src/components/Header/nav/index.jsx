@@ -45,7 +45,7 @@ export default function Index({setIsActive,isActive}) {
 
       className={`${styles.menu} w-full max-w-full z-[3] h-[100vh] fixed right-0 top-0 text-brand-text dark:text-brand-text-dark duration-500 transition-colors bg-brand-secondary/80 backdrop-blur-md`}
       >
-       <div className={styles.body}>
+       <div className={`${styles.body} container mx-auto`}>
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                
                     <div className=' flex justify-between items-center uppercase text-[13px] font-custom-condensed mb-[30px] pb-[10px]  border-b-[1px] border-b-brand-text  text-brand-text dark:text-brand-text-dark duration-500 transition-colors'>

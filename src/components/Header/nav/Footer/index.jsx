@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import styles from './style.module.scss';
 
 export default function index() {
   return (
-    <div className={`${styles.footer} font-normal text-para  text-brand-text `}>
+    <div className={` flex justify-between font-normal text-para  bg-slate-500 w-full text-brand-text `}>
         <Link href={"/"}>Awwwards</Link>
         <Link href={"/"}>Instagram</Link>
         <Link href={"/"}>Dribble</Link>

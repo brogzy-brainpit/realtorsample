@@ -30,7 +30,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className='px-4 bg-brand-background dark:bg-brand-background-dark transition-all duration-500 ease-in-out'>
+    <main className=' bg-brand-background dark:bg-brand-background-dark transition-all duration-500 ease-in-out'>
       {/* <AnimatePresence mode="wait">
     {isLoading &&< Preloader/>}
     </AnimatePresence> */}

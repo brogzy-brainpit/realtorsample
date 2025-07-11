@@ -19,7 +19,7 @@ const scaleAnimation = {
           closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
       }
   return (
-    <div className='z-[1] w-full py-[40px] container mx-auto bg-brand-background dark:bg-brand-background-dark transition-all duration-500 ease-in-out'>
+    <div className='px-4 z-[1] w-full py-[40px] container mx-auto bg-brand-background dark:bg-brand-background-dark transition-all duration-500 ease-in-out'>
         <h1 className='text-brand-text dark:text-brand-text-dark ease-in-out transition-all duration-500 py-10 text-footer font-semibold text-center leading-[1] font-custom'>
           Large holiday houses for every occasion</h1>
        

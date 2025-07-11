@@ -5,7 +5,7 @@ function WhyUs() {
   return (
     <div className='py-[90px]'>
 <InfiniteScrollX text={'not*your*regular*real*estate*agent*'} className={"animate-color-fad text-brand-text dark:text-brand-secondary transition-colors duration-500 ease-in-out text-[50px] md:text-[120px] font-custom uppercase font-bold "}/>
-<div className='flex breaker  container'>
+<div className='px-4 flex breaker  container'>
     <div className='flex gap-4 flex-col breaker-child py-8'>
        <h2 className='text-footer leading-[1] font-custom text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>Why choose us for real estate deals?</h2>
        <p className='text-para font-normal text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>

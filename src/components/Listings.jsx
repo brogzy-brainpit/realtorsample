@@ -50,7 +50,7 @@ const fakeListings = [
   },
 ];
   return (
-    <div id='listings' className="container mx-auto px4 py-20 pt-[150px]">
+    <div id='listings' className="px-4 container mx-auto px4 py-20 pt-[150px]">
       {/* Filter UI */}
   <div className='py-6  z-[2] flex items-center justify-center flex-col  '>
     <h4 className='font-custom-condensed text-footer leading-[0.8] text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out capitalize'>recommended </h4>

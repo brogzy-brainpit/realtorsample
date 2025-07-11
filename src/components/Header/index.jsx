@@ -74,9 +74,9 @@ export default function Index() {
                 </Magnetic>
 
                <div className='hidden md:flex w-full'>
-               {navItems.map(({href,title})=>{
+               {navItems.map(({href,title},index)=>{
                 return (
-                      <Magnetic>
+                      <Magnetic key={index}>
                     <div className={`${styles.el} font-normal `}>
                         <a href={href}>{title}</a>
                         <div className={`${styles.indicator} bg-brand-text dark:bg-brand-text-dark transition-all duration-500 ease-in-out `}></div>

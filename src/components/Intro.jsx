@@ -11,7 +11,7 @@ function Intro() {
       });
     }, []);
   return (
-    <div className=" relative py-[30px] bg-[url('/images/building1.jpg')] bg-cover bg-center">
+    <div className="px-4 relative py-[30px] bg-[url('/images/building1.jpg')] bg-cover bg-center">
         <div className='w-full h-full absolute top-0 left-0 bg-black/80'>
 
         </div>

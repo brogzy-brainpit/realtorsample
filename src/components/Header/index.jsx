@@ -32,6 +32,27 @@ export default function Index() {
             }
         })
     }, [])
+    const navItems = [
+  {
+    title: "About",
+    href: "#about",
+  }, {
+    title: "why us?",
+    href: "#why",
+  },
+  {
+    title: "Listings",
+    href: "#listings",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+]
 
     return (
         <>
@@ -53,31 +74,24 @@ export default function Index() {
                 </Magnetic>
 
                <div className='hidden md:flex w-full'>
-                 <Magnetic>
+               {navItems.map(({href,title})=>{
+                return (
+                      <Magnetic>
                     <div className={`${styles.el} font-normal `}>
-                        <a>Work</a>
+                        <a href={href}>{title}</a>
                         <div className={`${styles.indicator} bg-brand-text dark:bg-brand-text-dark transition-all duration-500 ease-in-out `}></div>
                     </div>
                 </Magnetic>
-                <Magnetic>
-                    <div className={`${styles.el} font-normal`}>
-                        <a>About</a>
-                        <div className={`${styles.indicator} bg-brand-text dark:bg-brand-text-dark transition-all duration-500 ease-in-out `}></div>
-                    </div>
-                </Magnetic>
-                <Magnetic>
-                    <div className={`${styles.el} font-normal `}>
-                        <a>Contact</a>
-                        <div className={`${styles.indicator} bg-brand-text dark:bg-brand-text-dark transition-all duration-500 ease-in-out `}></div>
-
-                    </div>
-                </Magnetic>
+                )
+               })}
+                
                </div>
             </div>
+            
         </div>
         </div>
         <div ref={button} className={styles.headerButtonContainer}>
-            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button}`}>
+            <Rounded  onClick={() => {setIsActive(!isActive)}} className='bg-brand-secondary  flex items-center justify-center relative m-[20px] w-[60px] h-[60px] rounded-full cursor-pointer'>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
         </div>

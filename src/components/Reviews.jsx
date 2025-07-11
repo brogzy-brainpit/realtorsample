@@ -57,7 +57,7 @@ const Review = () => {
 
   return (
     <div id="testimonials" className="text-center max-w-xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold mb-4 font-custom text-footer text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out">Genuine reviews</h2>
+      <h2 className="text-3xl font-bold mb-4 font-custom text-footer leading-[1] text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out">Genuine reviews</h2>
       <p className="text-sm text-gray-500 mb-2 font-custom-condensed">
         {index + 1} / {reviews.length}
       </p>

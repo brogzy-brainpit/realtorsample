@@ -25,9 +25,9 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="text-center rounded-full font-custom text-2xl inline-block tracking-normal px-4 py-2 bg-gray-200 transition-colors duration-500 ease-in-out dark:bg-gray-700 dark:text-white"
+      className="text-center rounded-full font-custom text-2xl inline-block tracking-normal px-2 py-2 bg-gray-200 transition-colors duration-500 ease-in-out dark:bg-gray-700 dark:text-white"
     >
- {isDark ? <Sun/> : <Moon/>}
+ {isDark ? <Sun className='w-4 h-4'/> : <Moon className='w-4 h-4'/>}
     </button>
   );
 }

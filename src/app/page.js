@@ -8,6 +8,8 @@ import Houses from '@/components/Houses';
 import SimplyRetsListings from '@/components/Listings';
 import WhyUs from '@/components/WhyUs';
 import Review from '@/components/Reviews';
+import Intro from '@/components/Intro';
+import OurNumbers from '@/components/OurNumbers';
 
 
 export default function Home() {
@@ -32,6 +34,8 @@ export default function Home() {
       {/* <AnimatePresence mode="wait">
     {isLoading &&< Preloader/>}
     </AnimatePresence> */}
+    <OurNumbers/>
+    <Intro/>
     <WhyUs/>
 <SimplyRetsListings/>
     <Review/>

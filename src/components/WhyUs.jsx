@@ -6,17 +6,18 @@ function WhyUs() {
     <div className='py-[90px]'>
 <InfiniteScrollX text={'not*your*regular*real*estate*agent*'} className={"animate-color-fad text-brand-text dark:text-brand-secondary transition-colors duration-500 ease-in-out text-[50px] md:text-[120px] font-custom uppercase font-bold "}/>
 <div className='flex breaker  container'>
-    <div className='fle breaker-child py-8'>
+    <div className='flex gap-4 flex-col breaker-child py-8'>
        <h2 className='text-footer leading-[1] font-custom text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>Why choose us for real estate deals?</h2>
        <p className='text-para font-normal text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos esse sequi, velit delectus doloremque, ipsa excepturi beatae ullam, nisi assumenda consectetur expedita accusamus. Consectetur a hic, sunt illum dolorem voluptates vel pariatur facilis quia?
       </p>
     </div>
-    <div className='flex breaker-child'>
+    <div className=" relative flex breaker-child ">
+ <div className="absolute inset-0 bg-[url('/images/whangaehu.png')] bg-cover bg-center opacity-10"></div>
 
-<div className="grid gap-y-10 sm:gap-y-14 grid-cols-1 sm:grid-cols-2 sm:gap-x-6">
+<div className=" grid gap-y-10 sm:gap-y-14 grid-cols-1 sm:grid-cols-2 sm:gap-x-6">
   {/* Block 1 */}
-  <div>
+  <div className=" p-2 rounded-md bg-red-00/50 backdrop-blur-sm">
     <div className="lg:max-w-[434px]">
       <div className="icon mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -43,7 +44,7 @@ function WhyUs() {
   </div>
 
   {/* Block 2 */}
-  <div>
+  <div  className=" p-2 rounded-md bg-red-00/50 backdrop-blur-sm">
     <div className="lg:max-w-[434px]">
       <div className="icon mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -70,7 +71,7 @@ function WhyUs() {
   </div>
 
   {/* Block 3 */}
-  <div>
+  <div className=" p-2 rounded-md bg-red-00/50 backdrop-blur-sm">
     <div className="lg:max-w-[434px]">
       <div className="icon mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.341" viewBox="0 0 18 17.341">
@@ -95,7 +96,7 @@ function WhyUs() {
   </div>
 
   {/* Block 4 */}
-  <div>
+  <div className=" p-2 rounded-md bg-red-00/50 backdrop-blur-sm">
     <div className="lg:max-w-[434px]">
       <div className="icon mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">

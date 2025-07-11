@@ -22,7 +22,7 @@ export default function Index() {
   }
 
   return (
-    <svg className={`${styles.svgCurve} fill-brand-secondary`}>
+    <svg className={`${styles.svgCurve} fill-brand-secondary/80 backdrop-blur-lg`}>
         <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )

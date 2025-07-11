@@ -6,6 +6,8 @@ import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
 import Footer from './Footer';
+import Magnetic from '@/app/common/Magnetic';
+import DarkModeToggle from '../../DarkModeToggle';
 
 const navItems = [
   {
@@ -41,13 +43,18 @@ export default function Index({setIsActive,isActive}) {
       animate="enter" 
       exit="exit" 
 
-      className={`${styles.menu} z-[3] h-[100vh] fixed right-0 top-0 text-brand-text dark:text-brand-text-dark duration-500 transition-colors bg-brand-secondary`}
+      className={`${styles.menu} w-full max-w-full z-[3] h-[100vh] fixed right-0 top-0 text-brand-text dark:text-brand-text-dark duration-500 transition-colors bg-brand-secondary/80 backdrop-blur-md`}
       >
        <div className={styles.body}>
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                
-                    <div className='uppercase text-[13px] font-custom-condensed mb-[30px]  border-b-[1px] border-b-brand-text  text-brand-text dark:text-brand-text-dark duration-500 transition-colors'>
-                        <p className='mb-2 text-brand-text'>Navigation</p>
+                    <div className=' flex justify-between items-center uppercase text-[13px] font-custom-condensed mb-[30px] pb-[10px]  border-b-[1px] border-b-brand-text  text-brand-text dark:text-brand-text-dark duration-500 transition-colors'>
+                        <p className='text-brand-text'>Navigation</p>
+                            <Magnetic>
+                            <div>
+                            <DarkModeToggle/>
+                            </div>  
+                            </Magnetic>
                     </div>
                     {
                       navItems.map( (data, index) => {

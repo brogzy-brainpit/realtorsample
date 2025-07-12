@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function Landing() {
   return (
-    <div className="mix-blend-scree w-full h-screen overflow-hidden">
+    <div className="mix-blend-scree w-full h-full overflow-hidden">
       <div className="relative flex w-full h-full">
         {/* Right side with styled video */}
         <div className="z-[4] w-full h-full absolute top-0 left-0 group overflow-hidden">

@@ -16,7 +16,7 @@ export default function CalModalButton({text='book a call'}) {
       cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, [])
-  return <p data-cal-namespace="30min" className="flex font-normal text-button ls-05"
+  return <p data-cal-namespace="30min" className="text-brand-text-dark flex font-normal text-button ls-05"
     data-cal-link="memet-oumar/30min"
     
     data-cal-config='{"layout":"month_view"}'

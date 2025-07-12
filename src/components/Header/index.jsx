@@ -56,29 +56,29 @@ export default function Index() {
 
     return (
         <>
-        <div className={` z-40 backdrop-blur-lg  relative `}>
+        <div className={` z-40 backdrop-blur-lg  relative  mix-blend-difference `}>
         <div ref={header} className={`${styles.header} `}>
-            <div className={`${styles.logo} text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out`}>
+            <div className={`${styles.logo} text-brand-text-dark transition-all duration-500 ease-in-out`}>
                 <p className={`${styles.copyright} font-custom`}>©</p>
-                <div className={`${styles.name} font-custom`}>
+                <div className={`${styles.name} font-custom mix-blend-difference`}>
                     <p className={styles.codeBy}>Realtor</p>
                     <p className={styles.dennis}>Memet</p>
                     {/* <p className={styles.snellenberg}>Realtor</p> */}
                 </div>
             </div>
-            <div className={`${styles.nav} text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out`}>
+            <div className={`${styles.nav} text-brand-text-dark transition-all duration-500 ease-in-out`}>
                 <Magnetic>
                     <div>
                     <DarkModeToggle/>
                     </div>  
                 </Magnetic>
 
-               <div className='hidden md:flex w-full'>
+               <div className='hidden md:flex w-full mix-blend-differenc'>
                {navItems.map(({href,title},index)=>{
                 return (
                       <Magnetic key={index}>
-                    <div className={`${styles.el} font-normal `}>
-                        <a href={href}>{title}</a>
+                    <div className={`${styles.el} font-custom-condensed `}>
+                        <a href={href} className='mix-blend-differenc' >{title}</a>
                         <div className={`${styles.indicator} bg-brand-text dark:bg-brand-text-dark transition-all duration-500 ease-in-out `}></div>
                     </div>
                 </Magnetic>

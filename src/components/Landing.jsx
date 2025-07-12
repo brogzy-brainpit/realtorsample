@@ -1,47 +1,60 @@
+import CalModalButton from '@/app/BookCall/CalModalButton';
 import React from 'react';
+import RoundedButton from "../app/common/RoundedButton"
+import Link from 'next/link';
+
 
 function Landing() {
   return (
-    <div className="bg-red-600 mix-blend-scree w-screen h-screen overflow-hidden">
-      <div className="flex w-full h-full">
-        {/* Left side */}
-        <div className="w-[50vw] mix-blend-scree h-full bg-red-950 flex items-center justify-center">
-          <svg
-  className="shrink-0"
-  viewBox="0 0 516 516"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  style={{ opacity: 1, transform: 'none' }}
->
-  <g clipPath="url(#a)" fill="black">
-    <path d="M250.01 265.62v250H171.9V343.74h-.02c-8.63.01-15.62 6.99-15.62 15.62v43.56h-.02v112.7H93.78v-112.7h-.02v-43.56c0-8.63-6.99-15.62-15.62-15.62h-.02v171.88H0v-250h250.01ZM0 0v250h250.01V0H0Zm156.26 171.85c0 5.7-1.53 11.05-4.2 15.65-5.4 9.33-15.49 15.6-27.05 15.6v.04H93.76V46.84h31.25v.03c11.57 0 21.67 6.29 27.07 15.63 2.66 4.6 4.18 9.93 4.18 15.62v93.73ZM265.61 265.62v78.12h93.75v-15.62c0-5.71 1.53-11.05 4.2-15.66 5.41-9.32 15.5-15.59 27.05-15.59s21.64 6.27 27.05 15.59c2.67 4.61 4.2 9.95 4.2 15.66 0 5.71-1.52 11.03-4.18 15.62-5.4 9.34-15.5 15.63-27.07 15.63v.03H265.6v156.22h250.01v-250H265.6h.01Zm97.94 156.26c5.4-9.34 15.5-15.63 27.07-15.63s21.67 6.29 27.07 15.63c2.66 4.6 4.18 9.93 4.18 15.62 0 5.69-1.52 11.03-4.19 15.63-5.4 9.34-15.49 15.62-27.06 15.62-11.57 0-21.66-6.28-27.06-15.62-2.67-4.6-4.19-9.94-4.19-15.63 0-5.69 1.52-11.02 4.18-15.62ZM515.62 250v-78.12h-93.75v15.62c0 5.71-1.53 11.05-4.2 15.66-5.41 9.32-15.5 15.59-27.05 15.59s-21.64-6.27-27.05-15.59c-2.67-4.61-4.2-9.95-4.2-15.66 0-5.71 1.52-11.03 4.18-15.62 5.4-9.34 15.5-15.63 27.07-15.63v-.03h125.01V0H265.62v250h250.01-.01ZM417.69 93.75c-5.4 9.34-15.5 15.63-27.07 15.63s-21.67-6.29-27.07-15.63c-2.66-4.6-4.18-9.93-4.18-15.62 0-5.69 1.52-11.03 4.19-15.63 5.4-9.34 15.49-15.62 27.06-15.62 11.57 0 21.66 6.28 27.06 15.62 2.67 4.6 4.19 9.94 4.19 15.63 0 5.69-1.52 11.02-4.18 15.62Z" />
-  </g>
-  <defs>
-    <clipPath id="a">
-      <path fill="#fff" d="M0 0h515.62v515.62H0z" />
-    </clipPath>
-  </defs>
-</svg>
-
-        </div>
-
+    <div className="mix-blend-scree w-full h-screen overflow-hidden">
+      <div className="relative flex w-full h-full">
         {/* Right side with styled video */}
-        <div className="w-[50vw] h-full relative group overflow-hidden">
+        <div className="z-[4] w-full h-full absolute top-0 left-0 group overflow-hidden">
           {/* VIDEO */}
-          {/* <video
+          <video
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
+            className="w-full h-full object-cover filter grayscal group-hover:grayscal-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
           >
-            <source src="/videos/demastrategiescom.mp4" type="video/mp4" />
+            <source src="/videos/estatevid.webm" type="video/mp4" />
             Your browser does not support the video tag.
-          </video> */}
+          </video>
 
           {/* OVERLAY */}
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition duration-700 ease-in-out pointer-events-none" />
         </div>
+        {/* dark overlay */}
+        <div className=' pointer-events-none mix-blend-differenc  z-[5] absolute top-0 left-0 w-full h-full bg-black/30'>
+        </div>
+          {/* end-dark overlay */}
+          {/* main hero text */}
+        <div className='  absolute absolut w-full h-full flex flex-col gap-4  justify-center items-center '>
+        <div className='z-[10] pointer-events-non  mix-blend-difference  absolut w-full flex flex-col  justify-center items-center bgred-400/80'>
+        <p className='my-4 uppercase text-center mix-blend-differenc text-brand-text-dark font-custom-condensed text-[24px] leading-[20px] md:text-[40px] md:leading-[48px] lg:text-[54px] lg:leading-[48px]'>
+          exceptional
+          </p>
+        <p className='capitaliz uppercase text-center mix-blend-differenc text-brand-text-dark font-custom   text-[64px] leading-[54px] md:text-[90px] md:leading-[78px] lg:text-[123px] lg:leading-[118px]'>
+          luxury estate
+          </p>
+        </div>
+         <div className=' z-[10] flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4'>
+       <RoundedButton>
+        <Link href={'#listings'}>
+  <p className='text-para font-normal text-brand-text-dark capitalize'>our properties</p>
+        </Link>
+
+</RoundedButton>
+ <RoundedButton backgroundColor='#94b141 '>
+  <CalModalButton  text='book an appointment'/>
+
+</RoundedButton>
+     </div>
+        </div>
+         {/* end main hero text */}
+        
+         
       </div>
     </div>
   );

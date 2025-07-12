@@ -34,13 +34,14 @@ export default function Home() {
       {/* <AnimatePresence mode="wait">
     {isLoading &&< Preloader/>}
     </AnimatePresence> */}
+    
+      <Landing />
     <OurNumbers/>
     <Intro/>
     <WhyUs/>
 <SimplyRetsListings/>
     <Review/>
      <Houses/>
-      {/* <Landing /> */}
 
     </main>
   );

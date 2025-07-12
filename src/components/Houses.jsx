@@ -37,7 +37,7 @@ const scaleAnimation = {
                  <h4 className='font-custom-condensed text-2xl text-white'>luxury houses</h4>
                 <h4  className=' py-2 font-custom text-4xl text-white'>luxury houses</h4>
                  <div className= " py-4 pointer-events-auto">
-    <RoundedButton backgroundColor="white">
+    <RoundedButton >
       <p className="font-normal text-para text-[#ffffff] hover:!text-neutral-900">
         learn more
       </p>
@@ -55,7 +55,7 @@ const scaleAnimation = {
                  <h4 className='font-custom-condensed text-2xl text-white'>luxury houses</h4>
                 <h4  className=' py-2 font-custom text-4xl text-white'>luxury houses</h4>
                  <div className= " py-4 pointer-events-auto">
-    <RoundedButton backgroundColor="white">
+    <RoundedButton >
       <p className="font-normal text-para text-[#ffffff] hover:!text-neutral-900">
         learn more
       </p>
@@ -74,7 +74,7 @@ const scaleAnimation = {
                  <h4 className='font-custom-condensed text-2xl text-white'>luxury houses</h4>
                 <h4  className=' py-2 font-custom text-4xl text-white'>luxury houses</h4>
                  <div className= " py-4 pointer-events-auto">
-    <RoundedButton backgroundColor="white">
+    <RoundedButton >
       <p className="font-normal text-para text-[#ffffff] hover:!text-neutral-900">
         learn more
       </p>

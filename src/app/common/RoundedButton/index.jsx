@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from '../Magnetic';
 
-export default function Index({children, backgroundColor="#ffffff", ...attributes}) {
+export default function Index({children, backgroundColor="transparent", ...attributes}) {
 
   const circle = useRef(null);
   let timeline = useRef(null);
@@ -29,7 +29,7 @@ export default function Index({children, backgroundColor="#ffffff", ...attribute
 
   return (
     <Magnetic>
-      <div className={`${styles.roundedButton} border-[2px] border-brand-secondary `} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
+      <div className={`${styles.roundedButton} border-[2px] border-brand-secondary `} style={{overflow: "hidden",backgroundColor}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
           {
             children
           }

@@ -6,17 +6,17 @@ import Link from 'next/link';
 
 function Landing() {
   return (
-    <div className="mix-blend-scree w-full h-full overflow-hidden">
+    <div className="mix-blend-scree w-full h-screen overflow-hidden">
       <div className="relative flex w-full h-full">
         {/* Right side with styled video */}
-        <div className="z-[4] w-full h-full absolute top-0 left-0 group overflow-hidden">
+        <div className="z-[4] w-full h-full absolute top-0 left-0 overflow-hidden">
           {/* VIDEO */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover filter grayscal group-hover:grayscal-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
+            className="w-full h-full object-cover filter grayscal group-hover:grayscal-0 transition-all duration-700 ease-in-out scale100 group-hover:scale105"
           >
             <source src="/videos/estatevid.webm" type="video/mp4" />
             Your browser does not support the video tag.
